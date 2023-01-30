@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+}
+
+.main-container {
+    width: 1028px;
+    margin: 0 auto;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:#17a2b8;
+    margin-bottom: 35px;
+}
+.header-logo-nav {
+    display: flex;
+    align-items: center;
+}
+.header-logo-nav span {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.header-logo-nav ul {
+    display: flex;
+    font-size: 1.1em;
+}
+.header-logo-nav  li {
+    margin-right: 15px;
+}
+.header-logo-nav  li:nth-child(1) {
+    color:#e8f3f6;
+}
+.header-logo-nav  li:nth-child(2),.header-logo-nav  li:nth-child(3) {
+    color:#8bd1dc;
+}
+
+.icons {
+    display: flex;
+}
+.icons span {
+    font-size: 2em;
+    margin-left: 25px;
+    color: #8bd1dc;
+}
+main h2 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.lessons {
+    margin-bottom: 50px;
+}
+.lessons ul {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+.lessons li {
+   padding: 15px 20px;
+   font-size: 1.1em;
+   color: #50c3e6;
+   border-bottom: 1px solid rgba(69, 69, 69, 0.4);
+}
+.lessons li:nth-child(1) {
+    border-top: 1px solid rgba(65, 65, 65, 0.4);
+    border-left: 1px solid rgba(65, 65, 65, 0.4);
+    border-right: 1px solid rgba(65, 65, 65, 0.4);
+    color:rgb(47, 47, 47);
+    border-bottom: none;
+}
+.lessons li:nth-child(7) {
+    border-top: 1px solid rgba(65, 65, 65, 0.4);
+    border-left: 1px solid rgba(65, 65, 65, 0.4);
+    border-right: 1px solid rgba(65, 65, 65, 0.4);
+    color:rgb(47, 47, 47);
+    border-bottom: none;
+}
+.schedules-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.schedule {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.schedule:nth-child(3) {
+    width: 30%;
+}
+.schedule-name {
+    font-size: 0.9em;
+    color:#d4d4d4;
+    margin-bottom: 30px;
+}
+.schedule:nth-child(3) .schedule-name {
+    margin-bottom: 15px;
+}
+.schedule:nth-child(3) .schedule-descr {
+    margin-bottom: 15px;
+    position: relative;
+}
+.schedule:nth-child(4) .schedule-descr {
+    position: relative;
+}
+.schedule-descr input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(111, 110, 110, 0.4);
+    margin-top: 15px;
+    position: absolute;
+    bottom: -25px;
+    border-radius: 5px;
+}
+.schedule-descr button {
+    width: 80%;
+    height: 40px;
+    /* padding: 10px 25px; */
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #17a2b8;
+    color:#ffffff;
+    position: absolute;
+    bottom: -10px;
+}
+
+.students-header {
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #bee5eb;
+}
+.students-descr {
+    color:#ffffff;
+    font-size: 1.1em;
+}
+.students-descr:nth-child(1) {
+    width: 20%;
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+.students-descr:nth-child(2) {
+    width: 10%;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.students-descr:nth-child(3),
+.students-descr:nth-child(4),
+.students-descr:nth-child(5) {
+    width: 15%;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.students-descr:nth-child(6) {
+    width: 25%;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.students-schedule li {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number-name {
+    width: 20%;
+}
+.number {
+    margin-right: 15px;
+}
+.gpa {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox,
+.test,
+.classwork {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox  {
+   gap: 20px;
+}
+.checkbox input[type='radio']:nth-child(1){
+    accent-color: rgb(65, 133, 65);
+    transform: scale(1.6);
+}
+.checkbox input[type='radio']:nth-child(2){
+    accent-color: rgb(255, 89, 89);
+    transform: scale(1.6);
+}
+.checkbox input[type='radio']:nth-child(3){
+    accent-color: rgb(153, 153, 50);
+    transform: scale(1.6);
+}
+.comment {
+    width: 25%;
+}
+.comment textarea {
+    width: 100%;
+}
+select {
+    padding: 10px 30px 10px 10px;
+}
